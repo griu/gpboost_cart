@@ -1,0 +1,21 @@
+name gpbooost_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+      - mlflow
+      - matplotlib
+      - lightgbm
+      - gpboost
+      - numpy
+      - pandas
+      - optuna
+      - hydra-core
+      - hydra-optuna-sweeper
+      - seaborn
+      - scikit-learn
+      - scipy
+      - shap
+	  
