@@ -1,9 +1,11 @@
-name gpbooost_env
+name: gpboost_env
 channels:
   - conda-forge
 dependencies:
   - python=3.9
   - pip
+  - nb_conda
+  - pdpbox
   - pip:
       - mlflow
       - matplotlib
@@ -18,4 +20,4 @@ dependencies:
       - scikit-learn
       - scipy
       - shap
-	  
+      - ipykernel
