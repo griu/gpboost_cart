@@ -1,0 +1,19 @@
+model:
+  QUANT_PARAM: 0.75
+  ROUNDS: 100
+
+params:
+    ask': 'train'
+    boosting_type': 'gbdt'
+    objective': 'quantile'
+    metric': 'quantile'
+    num_leaves': 70
+    max_depth': 8
+    feature_fraction': 0.8
+    bagging_fraction': 0.8
+    bagging_freq': 5
+    learning_rate': 0.01
+    seed: 42
+
+mlflow:
+    runname : 'first'
