@@ -1,9 +1,12 @@
 model:
   QUANT_PARAM: 0.75
-  ROUNDS: 100
-
+  ROUNDS: 1000
+  dir: 'outputs/optuna'
+  optuna_seed: 43
+  budget_time: 300
+ 
 params:
-    ask': 'train'
+    task': 'train'
     boosting_type': 'gbdt'
     objective': 'quantile'
     metric': 'quantile'
@@ -14,6 +17,9 @@ params:
     bagging_freq': 5
     learning_rate': 0.01
     seed: 42
-
+    num_threads: 8
+ 
 mlflow:
     runname : 'first'
+    exp_name: 'TEST_GPBOOST'
+ 
